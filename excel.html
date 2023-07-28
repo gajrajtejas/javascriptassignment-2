@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Custom Title</title>
+  <!--LINKING CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+
+    <!--NAVIGATION BAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="excel.html">Excel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--CREATING EXCEL FORM-->
+    <form id="excel-form" name="excelform">
+      <h2>Excel Functions</h2>
+
+      <div class="form-row">
+        <label for="numbers">Numbers:</label>
+        <input type="text" id="numbers" name="numbers" placeholder="Enter numbers with spaces" pattern="[0-9 ]+">
+      </div>
+
+      <!--FUNCTIONS OF EXCEL PAGE-->
+      <div class="form-row">
+        <p>Excel Functions:</p>
+
+        <!--SUM-->
+        <div class="sum">
+        <input type="radio" id="autosum" name="function" value="AutoSum" checked>
+        <label for="autosum" id="simple-label">AutoSum</label>
+        </div>
+
+        <!--AVERAGE-->
+        <div class="Average">
+        <input type="radio" id="average" name="function" value="Average">
+        <label for="average"id="simple-label" >Average</label>
+
+        <!--MAXIMUM-->
+        <div class="max">
+        <input type="radio" id="max" name="function" value="Max">
+        <label for="max" id="simple-label">Max</label>
+
+        <!--MINIMUM-->
+        <div class="min">
+        <input type="radio" id="min" name="function" value="Min">
+        <label for="min" id="simple-label">Min</label>
+      </div>
+
+
+      <!--BUTTON FOR CALCULATION-->
+      <button type="button" id="calculateButton">Calculate</button>
+
+      <!--BUTTON TO RESET-->
+      <button type="reset">Reset</button>
+
+
+      <!--OUTPUT-->
+      <div id="output">
+        <p>RESULT :<div id="excelResult"></div></p>
+      </div>
+    </form>
+  </main>
+
+
+  <!--BUTTON FOR DIFFERENT MODE-->
+  <div class="buttons">
+    <button id="darkModeButton">Dark Mode</button>
+    <button id="lightModeButton">Light Mode</button>
+  </div>
+  
+
+  <footer>
+    <p>
+      Georgian @ ILAC - HTML, CSS, and JavaScript Assignment#2 - SHUBHAM SHUBHAM, TEJAS TEJAS AND SAHEJPREET KAUR
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script> <!-- Replace "script.js" with the actual filename of your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBERSHIP</title>
+    <!--LINKING CSS-->
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header>
+
+      <!--NAV BAR-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="excel.html">Excel</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <!--FORM-->
+        <form id="main-form" name="mainform">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="firstName" required><br>
+    
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="lastName" required><br>
+    
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required><br>
+    
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required><br>
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required><br>
+    
+          <label for="province">Province:</label>
+          <input type="text" id="province" name="province" required><br>
+    
+          <!--MEMBERSHIP RADIO BUTTONS-->
+          <p>Membership:</p>
+          <input type="radio" id="premium-membership" name="membership" value="Premium Membership" checked>
+          <label for="premium-membership" id="simple-label">Premium Membership</label><br>
+    
+          <input type="radio" id="standard-membership" name="membership" value="Standard Membership">
+          <label for="standard-membership" id="simple-label">Standard Membership</label><br>
+    
+          <input type="radio" id="basic-membership" name="membership" value="Basic Membership">
+          <label for="basic-membership" id="simple-label">Basic Membership</label><br>
+    
+          <button type="button" id="sendButton">Send</button>
+          <button type="reset">Cancel</button>
+        </form>
+
+        <!--OUTPUT-->
+        <div id="output">
+            <p>USER INFO:<div id="result"></div></p>
+          </div>
+
+
+        <!--BUTTON FOR DIFFERENT MODE-->
+        <button id="darkModeButton">Dark Mode</button>
+        <button id="lightModeButton">Light Mode</button>
+        </main>
+
+        <footer>
+            <p>
+              Georgian @ ILAC - HTML, CSS, and JavaScript Assignment#2 -SHUBHAM SHUBHAM , TEJAS TEJAS AND SAHEJPREET KAUR
+            </p>
+        </footer>
+
+        <!--LINKING JAVASCRIPT-->
+        <script src="js/script.js"></script>
+    
+</body>
+</html>
